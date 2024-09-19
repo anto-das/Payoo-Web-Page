@@ -14,7 +14,7 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-3">
+              <div class="artboard artboard-demo phone-2">
                 <div class="stats shadow">
                     <div class="stat">
                       <div id="account-balance" class="stat-value">0.00</div>
@@ -23,10 +23,16 @@
                     
                   </div>
                   <div class="divider"></div>
-                  <!-- user action buttons -->
+                  <!-- user action button start -->
+                <div class="">
+                    <button id="add-money"  class="btn btn-lg btn-primary">Add Money</button>
+                    <button id="cash-out" class="btn btn-lg btn-error">CashOut</button>
+              </div>
+              <div class="divider"></div>
+                <!-- user action button end -->
                  
                 <!-- add money form start-->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -42,21 +48,40 @@
                        
                       </div>
                       <div class="form-control mt-6">
-                        <!-- user action button start -->
-                <div class="flex justify-between">
-                    <button id="btn-add-money" class="btn btn-lg btn-primary">Add Money</button>
-                    <button id="cash-out-btn" class="btn btn-lg btn-error">CashOut</button>
-              </div>
-              <div class="divider"></div>
+                        <button id="btn-add-money"  class="btn btn-primary">Add Amount</button>
                       </div>
                     </form>
                   </div>
                 <!-- add money from end -->
+
+                <!-- cash-out-start -->
+                <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="input-cashout-amount" type="number" placeholder="amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="input-cashout-pin" type="password" placeholder="enter your pin" class="input input-bordered" autocomplete="off" required />
+                       
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="cash-out-btn"  class="btn btn-primary">Cash Out Money</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- cash-out-end -->
               </div>
             </div>
           </div>
     </main>
     <script src="./js/recap.js"></script>
-    <!-- <script src="/js/home.js"></script> -->
+    <script src="./js/cash.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 </html>

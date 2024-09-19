@@ -25,8 +25,8 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 document.getElementById('cash-out-btn').addEventListener('click',function(event){
     event.preventDefault();
     // step-2:get cash out money value
-    let cashOutBlnc = document.getElementById('input-amount').value;
-    let cashOutPin = document.getElementById('input-pin').value;
+    let cashOutBlnc = document.getElementById('input-cashout-amount').value;
+    let cashOutPin = document.getElementById('input-cashout-pin').value;
     //step-3: verify the pin
     if(cashOutPin === '1234'){
         //step-4:get current balance
