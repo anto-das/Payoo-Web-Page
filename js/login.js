@@ -12,7 +12,7 @@ document.getElementById('button-login').addEventListener('click', function(event
     if(phoneNumber ==='1234' && pinNumber === '1234'){
         console.log('you are logged in');
         // step:5- allow
-        window.location.href = '/Payoo-Web-Page/home.html';
+        window.location.replace = '/Payoo-Web-Page/home.html';
     }
     else{
         alert('wrong phone number or Pin')
