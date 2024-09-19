@@ -7,8 +7,21 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     event.preventDefault();
     // step-2: get money to be added to the account
     let amountInput = document.getElementById('input-amount').value;
-    console.log(amountInput);
     // get the pin number provided
     let inputPin = document.getElementById('input-pin').value;
-    console.log(inputPin);
+    // step-3:verify pin number 
+    if(inputPin === '1234'){
+        // step-4:get the current balance
+        let balance= document.getElementById('account-balance').innerText;
+        // step-5: add amountInput with balance;
+        let amountNumber = parseFloat(amountInput);
+        let balanceNumber = parseFloat(balance);
+        let newBalance = amountNumber + balanceNumber;
+        document.getElementById('account-balance').innerText = newBalance;
+       
+    }
+    else{
+        alert('Failed to add money! Please try again');
+    }
+
 })
