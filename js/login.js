@@ -9,10 +9,10 @@ document.getElementById('button-login').addEventListener('click', function(event
     console.log(phoneNumber, pinNumber);
     // step:4-validate phone and pin
     // this is temporary should do like this.
-    if(phoneNumber ==='01845282040' && pinNumber === '1234'){
+    if(phoneNumber ==='1234' && pinNumber === '1234'){
         console.log('you are logged in');
         // step:5- allow
-        window.location.href = '/home.html';
+        window.location.href = '/Payoo-Web-Page/home.html';
     }
     else{
         alert('wrong phone number or Pin')
